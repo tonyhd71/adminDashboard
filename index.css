@@ -1,0 +1,38 @@
+.your-projects {
+    display: grid;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: 200px 200px 200px;
+    gap:30px
+}
+.announcements {
+    display: grid;
+    grid-template-columns: 200px;
+    grid-template-rows: 50px 50px 50px;
+}
+.trending {
+    display: grid;
+    grid-template-columns: 200px;
+    grid-template-rows: 50px 50px 50px 50px;
+}
+.nav {
+    float: left;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 30px;
+}
+.nav, .trending, .announcements, .your-projects {
+    border:1px solid black;
+}
+.projects {
+    background-color: aqua;
+    border-left: 5px solid peachpuff;
+    border-radius: 7px;
+}
+.rightItems, .main-content {
+    display: inline-flex;
+}
+.header {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: 75px;
+}
