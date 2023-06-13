@@ -18,7 +18,7 @@
     float: left;
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: auto auto  auto  auto  auto  auto  auto  auto  auto  auto ;
+    grid-template-rows: 75px 75px 75px 75px 75px 75px 75px 75px 75px 75px;
     width: auto;
 }
 .nav, .trending, .announcements, .your-projects,.header {
@@ -50,4 +50,3 @@
     width: auto;
     padding: 15px;
 }
-
