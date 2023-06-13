@@ -1,38 +1,53 @@
 .your-projects {
     display: grid;
-    grid-template-columns: 300px 300px;
-    grid-template-rows: 200px 200px 200px;
-    gap:30px
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    gap:30px;
 }
 .announcements {
     display: grid;
-    grid-template-columns: 200px;
-    grid-template-rows: 50px 50px 50px;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
 }
 .trending {
     display: grid;
-    grid-template-columns: 200px;
-    grid-template-rows: 50px 50px 50px 50px;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
 }
 .nav {
     float: left;
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 30px;
+    grid-template-rows: auto auto  auto  auto  auto  auto  auto  auto  auto  auto ;
+    width: auto;
 }
-.nav, .trending, .announcements, .your-projects {
+.nav, .trending, .announcements, .your-projects,.header {
     border:1px solid black;
 }
 .projects {
     background-color: aqua;
     border-left: 5px solid peachpuff;
     border-radius: 7px;
+    width: auto;
+    height: auto;
 }
-.rightItems, .main-content {
+.main-content {
     display: inline-flex;
+    width: auto;
 }
 .header {
     display: grid;
     grid-template-columns: auto auto auto auto auto;
-    grid-template-rows: 75px;
+    grid-template-rows: auto auto;
+    width: auto;
 }
+.rightItems {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+}
+.main {
+    width: auto;
+    padding: 15px;
+}
+
