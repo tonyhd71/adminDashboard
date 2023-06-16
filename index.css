@@ -1,52 +1,37 @@
-.your-projects {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto auto;
-    gap:30px;
-}
-.announcements {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto auto auto;
-}
-.trending {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto auto auto auto;
-}
-.nav {
-    float: left;
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 75px 75px 75px 75px 75px 75px 75px 75px 75px 75px;
-    width: auto;
-}
-.nav, .trending, .announcements, .your-projects,.header {
-    border:1px solid black;
-}
-.projects {
-    background-color: aqua;
-    border-left: 5px solid peachpuff;
-    border-radius: 7px;
-    width: auto;
-    height: auto;
-}
-.main-content {
-    display: inline-flex;
-    width: auto;
-}
-.header {
-    display: grid;
-    grid-template-columns: auto auto auto auto auto;
-    grid-template-rows: auto auto;
-    width: auto;
-}
-.rightItems {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto auto;
-}
-.main {
-    width: auto;
-    padding: 15px;
-}
+.container {
+    display: inline-grid;
+    grid-template: 40px 40px 40px 40px 40px/ 40px 40px 40px 40px 40px;
+    background-color: lightblue; 
+  }
+  
+  .room {
+    border: 1px solid;
+    font-size: 50%;
+    text-align: center;
+  }
+  
+  #living-room {
+    grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  
+  #kitchen {
+    grid-column: 5 / 6;
+    grid-row: 2 / 6;
+  }
+  
+  #bedroom {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 6;
+  }
+  
+  #bathroom {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 6;
+  }
