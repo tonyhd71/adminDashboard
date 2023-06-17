@@ -13,13 +13,13 @@
   }
   
   #banner {
-    grid-column-start: 3;
+    grid-column-start: 2;
     grid-column-end: 10;
     grid-row-start: 1;
     grid-row-end: 3;
     background-color: white;
     display: inline-grid;
-    grid-template: auto auto / auto 50% auto auto auto;
+    grid-template: auto auto / 70% auto auto auto;
     padding:15px;
   }
   
@@ -29,7 +29,7 @@
   }
   
   #projects {
-    grid-column-start: 3;
+    grid-column-start: 2;
     grid-column-end: 8;
     grid-row-start: 4;
     grid-row-end: 10;
@@ -39,19 +39,17 @@
   
   #nav {
     grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 9;
     display: inline-grid;
     grid-template: auto auto auto auto auto auto auto auto auto auto 100%/auto;
     text-align: left;
     background-color: cornflowerblue;
-    padding: 15px;
     color: white;
-    font-size: 12px;
   }
   #header {
-    grid-column-start: 3;
+    grid-column-start: 2;
     grid-column-end: 10;
     grid-row-start: 3;
     grid-row-end: 9;
@@ -67,15 +65,18 @@
   }
   .navItem, .bannerItem {
     border: 1px solid black;
+    padding: 15px;
   }
   .navItem > h1 {
     margin-left: 10px;
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 p {
     font-size: 14px;
 }
-.svg-icon.search-icon {
-    display: inline-block;
+.svg-icon.search-icon, #bell, #dog, #ball,#cat, #car, #logo {
     width: 30px;
     height: 30px;
   
@@ -86,3 +87,59 @@ p {
         stroke: #299ecc;
       }
     }
+}
+#searchIcon {
+    margin-right: 15px;
+}
+.projectItems > p {
+    margin: 15px;
+    font-size: 16px;
+    text-align: left;
+}
+.projectItems > h1 {
+    margin: 15px;
+    padding: 10px;
+    text-align: left;
+}
+#announceMents {
+    display: inline-grid;
+    grid-template: auto auto auto/auto;
+    background-color: white;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 5px;
+
+}
+#trendIng {
+    display: inline-grid;
+    grid-template: auto auto auto auto/auto;
+    background-color: white;
+    margin: 15px;
+    padding: 15px;
+    width: 80%;
+    border-radius: 5px;
+}
+.btns {
+    background-color: cornflowerblue;
+    color: white;
+    padding: 10px;
+    border-radius: 20%;
+}
+.trending {
+    display: inline-flex;
+}
+#dog, #ball, #cat, #car, #logo {
+    margin-top: 5px;
+    margin-right: 10px;
+}
+.announcements > p {
+    text-align: left;
+}
+.trending > p {
+    float: right;
+    flex-grow: inherit;
+}
+#iconAndHi {
+    display: inline-grid;
+    grid-template:auto/auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+}
