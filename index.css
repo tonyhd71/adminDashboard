@@ -3,6 +3,7 @@
     display: inline-grid;
     grid-template: 140px 40px 50px 140px 140px 140px 140px 140px/170px 170px 170px 170px 170px 170px 170px 170px 170px;
     background-color: lightblue; 
+    padding:15px;
   }
   
   .room {
@@ -11,12 +12,15 @@
     text-align: center;
   }
   
-  #living-room {
+  #banner {
     grid-column-start: 3;
     grid-column-end: 10;
     grid-row-start: 1;
     grid-row-end: 3;
     background-color: white;
+    display: inline-grid;
+    grid-template: auto auto / auto 50% auto auto auto;
+    padding:15px;
   }
   
   #announceAndTrend {
@@ -61,6 +65,24 @@
     border-left: 5px solid sandybrown;
     border-radius: 6px;
   }
-  .navItem {
+  .navItem, .bannerItem {
     border: 1px solid black;
   }
+  .navItem > h1 {
+    margin-left: 10px;
+  }
+p {
+    font-size: 14px;
+}
+.svg-icon.search-icon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+  
+    /* On hover: blue strokes */
+    &:focus,
+    &:hover {
+      .search-path {
+        stroke: #299ecc;
+      }
+    }
